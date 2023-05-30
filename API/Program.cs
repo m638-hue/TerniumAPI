@@ -7,7 +7,7 @@ using Microsoft.Data.SqlClient;
     var builder = WebApplication.CreateBuilder(args);
     var app = builder.Build();
 
-    app.MapGet("/", () => Environment.GetEnvironmentVariable("SQLConnectionString"));
+    app.MapGet("/", () => Environment.GetEnvironmentVariable("SQLAZURECONNSTR_SQLConnectionString"));
 
 
     app.Run();
