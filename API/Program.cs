@@ -23,7 +23,7 @@ class SQLReader
 
     public string readQueryResult(string query)
     {
-        using (SqlDataReader reader = new SqlCommand(query, connection).ExecuteReader())
+        using (SqlDataReader reader = new SqlCommand(query, connection).ExecuteReader()) 
         {
             return reader.Read().ToString();
         }
