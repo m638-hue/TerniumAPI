@@ -10,9 +10,7 @@ using (SqlConnection connection = new SqlConnection(Environment.GetEnvironmentVa
     var builder = WebApplication.CreateBuilder(args);
     var app = builder.Build();
 
-    app.MapGet("/", () => sQLReader.readQueryResult("select * from users");
-
-
+    app.MapGet("/", () => sQLReader.readQueryResult("select * from users"));
     app.Run();
 }
 
